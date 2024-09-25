@@ -50,6 +50,9 @@ document.getElementById('btn-donate-money1').addEventListener('click', function(
 
         const parentDiv = document.getElementById('history');
         parentDiv.appendChild(newDiv);
+
+        const myModal = document.getElementById('my_modal_1');
+        myModal.showModal();
     }else{
         alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1 BDT");
     }
@@ -106,6 +109,9 @@ document.getElementById('btn-donate-money2').addEventListener('click', function(
 
         const parentDiv = document.getElementById('history');
         parentDiv.appendChild(newDiv);
+
+        const myModal = document.getElementById('my_modal_1');
+        myModal.showModal();
     }else{
         alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1 BDT");
     }
@@ -164,7 +170,7 @@ document.getElementById('btn-donate-money3').addEventListener('click', function(
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('prev-donated3').innerText = newDonate;
 
-        const myModal = getElementById('my_modal_1');
+        const myModal = document.getElementById('my_modal_1');
         myModal.showModal();
     }else{
         alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1 BDT");
