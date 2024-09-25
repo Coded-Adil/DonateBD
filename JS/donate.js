@@ -2,7 +2,7 @@ document.getElementById('btn-donate-money1').addEventListener('click', function(
     event.preventDefault();
     const donateMoney = document.getElementById('amount-input1').value;
 
-    if (typeof donateMoney === 'number' && donateMoney > 0) {
+    if (donateMoney > 0) {
         // Get the Current Balance
         const balance = document.getElementById('account-balance').innerText;
         const donated = document.getElementById('prev-donated1').innerText;
@@ -58,7 +58,7 @@ document.getElementById('btn-donate-money2').addEventListener('click', function(
     event.preventDefault();
     const donateMoney = document.getElementById('amount-input2').value;
 
-    if (typeof donateMoney === 'number' && donateMoney > 0) {
+    if (donateMoney > 0) {
         // Get the Current Balance
         const balance = document.getElementById('account-balance').innerText;
         const donated = document.getElementById('prev-donated2').innerText;
@@ -114,7 +114,7 @@ document.getElementById('btn-donate-money3').addEventListener('click', function(
     event.preventDefault();
     const donateMoney = document.getElementById('amount-input3').value;
 
-    if (typeof donateMoney === 'number' && donateMoney > 0) {
+    if (donateMoney > 0) {
         // Get the Current Balance
         const balance = document.getElementById('account-balance').innerText;
         const donated = document.getElementById('prev-donated3').innerText;
@@ -164,8 +164,8 @@ document.getElementById('btn-donate-money3').addEventListener('click', function(
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('prev-donated3').innerText = newDonate;
 
-        const myModal = getElementById('"my_modal_1');
-        myModal.showModal()
+        const myModal = getElementById('my_modal_1');
+        myModal.showModal();
     }else{
         alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1 BDT");
     }
