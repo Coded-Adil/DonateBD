@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind.config.js link -->
+    <script src="JS/tailwind.config.js"></script>
+    <!-- Css File -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>DonateBD/Blog</title>
+</head>
+<body>
+    <header class="sticky top-0 z-10 bg-transparent backdrop-blur-xl">
+        <div class="nav-bg pb-4">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                <a class="btn btn-act text-sm md:text-xl font-bold">Home</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                <div class="menu menu-horizontal px-1 space-x-4">
+                    <img src="Images/logo.png" alt="" srcset="">
+                    <h3 class="font-bold text-sm md:text-xl my-auto">Donate Bangladesh</h3>
+                </div>
+                </div>
+                <div class="navbar-end md:space-x-2">
+                <img src="Images/coin.png" alt="" srcset="">
+                <h3 class="font-semibold">5500</h3>
+                <h3 class="font-semibold"> BDT</h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-20 mb-6  pb-4 space-x-4">
+            <a class="btn btn-act text-xl font-bold">Donation</a>
+            <a class="btn btn-act text-xl font-bold">History</a>
+        </div>
+    </header>
+    <main class="relative">
+        <!-- FAQ-container -->
+        <div class="container mx-auto">
+            <div class="flex space-x-6 align-middle m-6">
+                <h1 class="font-bold text-6xl">Important FAQ</h1>
+                <img class="w-24 h-24" src="Images/speech-bubble.gif" alt="" srcset="">
+            </div>
+            <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>Document Object Model is a model that is mainly used for Building a website. HTML document can be manipulated by Javascript and elements in the HTML document can be used as an object in JavaScript in DOM</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>We can use querySelector to select an element in DOM. If the element has an Id we can also use getElementById to select that element in DOM</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation on the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event Delegation is a way to use HTML element and make function to let the website work using eventListener. By using event listener we can take an element and add some function to the element</p>
+              </div>
+              <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using DOM?</div>
+                <div class="collapse-content">
+                  <p>To manipulate an element we have to get the element and set it as a variable in Javascript and then we can use event listener to manipulate that element. To manipulate attributes and styles those elements we can use .addEventListener and then we and create a function and inside that function we can manipulate the element to add attributes and we can also style.</p>
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="h-28 w-full mt-10 nav-bg"></div>
+    </footer>
+</body>
+</html>
