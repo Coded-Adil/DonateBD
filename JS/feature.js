@@ -1,0 +1,14 @@
+document.getElementById('show-history').addEventListener('click',function(){
+    document.getElementById('history').classList.remove('hidden');
+    document.getElementById('donate').classList.add('hidden');
+    document.getElementById('show-history').classList.add('btn-act');
+    document.getElementById('show-history').classList.remove('btn-deact');
+    document.getElementById('show-donate').classList.add('btn-deact');
+})
+document.getElementById('show-donate').addEventListener('click',function(){
+    document.getElementById('donate').classList.remove('hidden');
+    document.getElementById('history').classList.add('hidden');
+    document.getElementById('show-donate').classList.add('btn-act');
+    document.getElementById('show-donate').classList.remove('btn-deact');
+    document.getElementById('show-history').classList.add('btn-deact');
+})

@@ -6,3 +6,9 @@
 .nav-bg{
     background-color: rgba(249, 247, 243, 1);
 }
+
+.btn-deact{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}

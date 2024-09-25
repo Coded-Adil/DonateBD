@@ -17,7 +17,7 @@
         <div class="nav-bg pb-4">
             <div class="navbar container mx-auto">
                 <div class="navbar-start">
-                <a class="btn btn-act text-sm md:text-xl font-bold">Home</a>
+                <a id="home-btn" class="btn btn-act text-sm md:text-xl font-bold">Home</a>
                 </div>
                 <div class="navbar-center lg:flex">
                 <div class="menu menu-horizontal px-1 space-x-4">
@@ -76,5 +76,12 @@
     <footer>
         <div class="h-28 w-full mt-10 nav-bg"></div>
     </footer>
+    <!-- JS Link -->
+    <script>
+        const btnHome = document.getElementById('home-btn');
+        btnHome.addEventListener('click', function(){
+            window.location.href = "index.html";
+        })
+    </script>
 </body>
 </html>
